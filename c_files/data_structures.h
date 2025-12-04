@@ -8,6 +8,7 @@ typedef struct TableRow {
 // Structure to represent metadata for a table
 typedef struct TableMetadata {
     uint32_t num_columns; 
+    uint32_t num_rows; 
     size_t table_size;
     char * table_name;  
     struct TableRow table_rows[]; // has to be at the end of the struct                 
